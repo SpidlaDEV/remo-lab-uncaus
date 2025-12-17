@@ -855,22 +855,6 @@ export function RemoteLab({ labId, onBack, onViewHistory }: RemoteLabProps) {
                     </div>
                   </div>
 
-                  {/* Conductivity */}
-                  <div className="p-4 rounded-lg bg-gray-50'}">
-                    <div className="flex items-center justify-between mb-2">
-                      <div className="flex items-center gap-2 text-gray-700">
-                        <Zap className="w-5 h-5 text-purple-500" />
-                        <span>Conductividad</span>
-                      </div>
-                      <span className="text-xl font-bold text-gray-900">{stage == 3 || stage == 5 ? conductivity.toFixed(2) : 0} mS/cm</span>
-                    </div>
-                    <div className="w-full bg-gray-200 rounded-full h-2">
-                      <div
-                          className="h-2 rounded-full transition-all bg-purple-500"
-                          style={{ width: `${Math.min(((stage == 3 || stage == 5 ? conductivity.toFixed(2) : 0) / 5) * 100, 100)}%` }}
-                      />
-                    </div>
-                  </div>
                 </div>
               </div>
 
