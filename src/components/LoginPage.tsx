@@ -32,7 +32,7 @@ export function LoginPage({ onLogin, onHome }: LoginPageProps) {
           <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-green-500 to-blue-500 rounded-2xl mb-6 shadow-lg">
             <Microscope className="w-10 h-10 text-white" />
           </div>
-          <h2 className="text-gray-900 mb-2">Bienvenido a RemoteLab</h2>
+          <h2 className="text-gray-900 mb-2">Bienvenido a LabRemote</h2>
           <p className="text-gray-600">Inicie sesión para acceder a laboratorios remotos</p>
         </div>
 

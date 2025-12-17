@@ -63,7 +63,7 @@ export function HomePage({ onLogin, onExplore }: HomePageProps) {
               <Microscope className="w-7 h-7 text-white" />
             </div>
             <div>
-              <h3 className="text-green-600">RemoteLab</h3>
+              <h3 className="text-green-600">LabRemote</h3>
               <p className="text-xs text-gray-500">Universidad Nacional del Chaco Austral</p>
             </div>
           </div>
@@ -123,7 +123,7 @@ export function HomePage({ onLogin, onExplore }: HomePageProps) {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-gray-900 mb-4">¿Qué es RemoteLab?</h2>
+            <h2 className="text-gray-900 mb-4">¿Qué es LabRemote?</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
               Es una nueva forma de aprendizaje innovadora con acceso a laboratorios de múltiples instituciones
             </p>
@@ -261,7 +261,7 @@ export function HomePage({ onLogin, onExplore }: HomePageProps) {
                 <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-blue-500 rounded-lg flex items-center justify-center">
                   <Microscope className="w-6 h-6" />
                 </div>
-                <h4>RemoteLab</h4>
+                <h4>LabRemote</h4>
               </div>
               <h5>Universidad Nacional del Chaco Austral</h5>
               <p className="text-gray-400 mt-4">
@@ -286,7 +286,7 @@ export function HomePage({ onLogin, onExplore }: HomePageProps) {
             </div>
           </div>
           <div className="pt-8 border-t border-gray-800 text-center text-gray-400">
-            <p>&copy; 2025 RemoteLab. Todos los derechos reservados.</p>
+            <p>&copy; 2025 LabRemote. Todos los derechos reservados.</p>
           </div>
         </div>
       </footer>

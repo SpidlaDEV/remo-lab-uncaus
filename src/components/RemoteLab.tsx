@@ -305,7 +305,7 @@ export function RemoteLab({ labId, onBack, onViewHistory }: RemoteLabProps) {
                   <Microscope className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-green-600">RemoteLab</h3>
+                  <h3 className="text-green-600">LabRemote</h3>
                   <p className="text-xs text-gray-500">Universidad Nacional del Chaco Austral</p>
                 </div>
               </div>
