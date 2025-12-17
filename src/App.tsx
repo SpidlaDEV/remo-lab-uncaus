@@ -10,8 +10,8 @@ type PageType = 'home' | 'login' | 'labs' | 'remote-lab' | 'history' | 'claude';
 
 export default function App() {
   // TODO cambiar
-  const [currentPage, setCurrentPage] = useState<PageType>('remote-lab');
-  const [selectedLab, setSelectedLab] = useState<string | null>('cip-001');
+  const [currentPage, setCurrentPage] = useState<PageType>('home');
+  const [selectedLab, setSelectedLab] = useState<string | null>(null);
   const [isLoggedIn, setIsLoggedIn] = useState(true);
 
   const navigateTo = (page: PageType, labId?: string) => {
