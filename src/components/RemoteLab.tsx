@@ -17,6 +17,7 @@ import {
     Zap
 } from 'lucide-react';
 import {CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis} from 'recharts';
+import video from '../public/Chemical_Reactor_Video_Generation.mp4';
 
 interface RemoteLabProps {
     labId: string;
@@ -373,12 +374,12 @@ export function RemoteLab({labId, onBack, onViewHistory}: RemoteLabProps) {
                         <div className="scada-container">
                             <div className="video-container">
                                 <video className="video" controls autoPlay muted loop>
-                                    <source src="/public/Chemical_Reactor_Video_Generation.mp4" type="video/mp4"/>
+                                    <source src={video} type="video/mp4"/>
                                     Tu navegador no soporta el formato de video.
                                 </video>
 
                                 <video className="video" controls autoPlay muted loop>
-                                    <source src="/public/Chemical_Reactor_Video_Generation.mp4" type="video/mp4"/>
+                                    <source src={video} type="video/mp4"/>
                                     Tu navegador no soporta el formato de video.
                                 </video>
                             </div>
