@@ -4,14 +4,14 @@ import { LoginPage } from './components/LoginPage';
 import { LaboratoryList } from './components/LaboratoryList';
 import { RemoteLab } from './components/RemoteLab';
 import { ExperimentHistory } from './components/ExperimentHistory';
-import RemoteLaboratoryPlatform from "./components/Claude/remote_lab_platform";
 import {RemoteLabOld} from "./components/RemoteLabOld";
 
 type PageType = 'home' | 'login' | 'labs' | 'remote-lab' | 'history' | 'claude';
 
 export default function App() {
-  const [currentPage, setCurrentPage] = useState<PageType>('home');
-  const [selectedLab, setSelectedLab] = useState<string | null>(null);
+  // TODO cambiar
+  const [currentPage, setCurrentPage] = useState<PageType>('remote-lab');
+  const [selectedLab, setSelectedLab] = useState<string | null>('cip-001');
   const [isLoggedIn, setIsLoggedIn] = useState(true);
 
   const navigateTo = (page: PageType, labId?: string) => {
