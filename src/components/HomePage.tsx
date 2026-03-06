@@ -10,7 +10,7 @@ interface HomePageProps {
 export function HomePage({ onLogin, onExplore }: HomePageProps) {
   const features = [
     {
-      icon: <RemoteLabLogo className="text-white" />,
+      icon: <RemoteLabLogo />,
       title: 'Equipo Avanzado',
       description: 'Accede remotamente a equipos de laboratorio de vanguardia'
     },
