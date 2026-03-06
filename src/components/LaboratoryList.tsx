@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { Search, Filter, Microscope, LogOut, History, ChevronRight, Building2 } from 'lucide-react';
+import { Search, Filter, LogOut, History, ChevronRight, Building2 } from 'lucide-react';
+import RemoteLabLogo from "./ui/remote-lab-logo";
 
 interface Lab {
   id: string;
@@ -135,7 +136,7 @@ export function LaboratoryList({ onSelectLab, onViewHistory, onLogout }: Laborat
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-blue-500 rounded-lg flex items-center justify-center">
-                <Microscope className="w-6 h-6 text-white" />
+                <RemoteLabLogo className="text-white" />
               </div>
               <div>
                 <h3 className="text-green-600">LabRemote</h3>

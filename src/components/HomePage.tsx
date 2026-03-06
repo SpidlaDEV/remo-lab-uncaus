@@ -1,5 +1,6 @@
-import { ArrowRight, Microscope, Users, Globe, Shield, Zap, BookOpen } from 'lucide-react';
+import { ArrowRight, Users, Globe, Shield, Zap, BookOpen } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import RemoteLabLogo from "./ui/remote-lab-logo";
 
 interface HomePageProps {
   onLogin: () => void;
@@ -9,7 +10,7 @@ interface HomePageProps {
 export function HomePage({ onLogin, onExplore }: HomePageProps) {
   const features = [
     {
-      icon: <Microscope className="w-8 h-8" />,
+      icon: <RemoteLabLogo className="text-white" />,
       title: 'Equipo Avanzado',
       description: 'Accede remotamente a equipos de laboratorio de vanguardia'
     },
@@ -60,7 +61,7 @@ export function HomePage({ onLogin, onExplore }: HomePageProps) {
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-blue-500 rounded-lg flex items-center justify-center">
-              <Microscope className="w-7 h-7 text-white" />
+              <RemoteLabLogo className="text-white" />
             </div>
             <div>
               <h3 className="text-green-600">LabRemote</h3>
@@ -259,7 +260,7 @@ export function HomePage({ onLogin, onExplore }: HomePageProps) {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-blue-500 rounded-lg flex items-center justify-center">
-                  <Microscope className="w-6 h-6" />
+                  <RemoteLabLogo className="text-white" />
                 </div>
                 <h4>LabRemote</h4>
               </div>

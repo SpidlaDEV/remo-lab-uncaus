@@ -7,7 +7,6 @@ import {
     Clock,
     Droplet,
     Flame,
-    Microscope,
     OctagonX,
     Play,
     RotateCw,
@@ -18,6 +17,7 @@ import {
 } from 'lucide-react';
 import {CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis} from 'recharts';
 import video from '../public/Chemical_Reactor_Video_Generation.mp4';
+import RemoteLabLogo from "./ui/remote-lab-logo";
 
 interface RemoteLabProps {
     labId: string;
@@ -318,7 +318,7 @@ export function RemoteLab({labId, onBack, onViewHistory}: RemoteLabProps) {
                         <div className="flex items-center gap-3">
                             <div
                                 className="w-10 h-10 bg-gradient-to-br from-green-500 to-blue-500 rounded-lg flex items-center justify-center">
-                                <Microscope className="w-6 h-6 text-white"/>
+                                <RemoteLabLogo className="text-white" />
                             </div>
                             <div>
                                 <h3 className="text-green-600">LabRemote</h3>

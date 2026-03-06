@@ -8,10 +8,10 @@ import {
   Zap,
   Droplet,
   Clock,
-  Settings,
-  Microscope, History, LogOut
+  Settings
 } from 'lucide-react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import RemoteLabLogo from "./ui/remote-lab-logo";
 
 interface RemoteLabProps {
   labId: string;
@@ -110,10 +110,10 @@ export function RemoteLabOld({ labId, onBack, onViewHistory }: RemoteLabProps) {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-blue-500 rounded-lg flex items-center justify-center">
-                <Microscope className="w-6 h-6 text-white" />
+                <RemoteLabLogo className="text-white" />
               </div>
               <div>
-                <h3 className="text-green-600">RemoteLab</h3>
+                <h3 className="text-green-600">LabRemote</h3>
                 <p className="text-xs text-gray-500">Universidad Nacional del Chaco Austral</p>
               </div>
             </div>
